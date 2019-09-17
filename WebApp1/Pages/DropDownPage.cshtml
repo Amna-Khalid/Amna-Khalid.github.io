@@ -1,0 +1,39 @@
+﻿@page
+@model WebApp1.Pages.DropDownPageModel
+@{
+}
+
+<div class="text-center">
+    <h1 class="display-4">Hello World !</h1>
+    <h5 align="left" ; style="margin:5px ; color:blue;"> Select any Option </h5>
+</div>
+
+
+@*<select style="border:solid" id="mySelect" onchange="selectionchange();">
+    <option style="color:fuchsia;" value="Happy" name="showform" onchange="selectionchange(this.value);">Happy</option>
+    <option style="color:fuchsia;" value="Sad" name="showform" onchange="selectionchange(this.value);">Sad</option>
+</select>
+
+<br />
+<script>
+    function selectionchange(showform) {
+        var e = document.getElementById("mySelect");
+        var str = e.options[e.selectedIndex].value;
+
+        if (str == 'Happy') {
+            document.getElementById("btn1").style.display = 'block';
+            document.getElementById("btn2").style.display = 'none';
+        }
+        if (str == 'Sad') {
+            document.getElementById("btn2").style.display = 'block';
+            document.getElementById("btn1").style.display = 'none';
+        }
+    }
+</script>*@
+
+<br />
+<input id="btn1" style="color:limegreen;" type="button" class="button" value="Happy" onclick="window.location.href = 'HappyPage'" /></br>
+<br>
+<input id="btn2" style="color:limegreen" type="button" class="button" value="Sad" onclick="window.location.href = 'SadPage'" /></br>
+<br>
+<input id="Button1" type="button" value="Logout" style="margin:5px; float:right" ; color="darkslategrey" onclick="window.location.href = 'Index' " />
